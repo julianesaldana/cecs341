@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ 
+ 
+ 
+time=   5.0 ns  A=0 B=0 || F2=1
+time=  10.0 ns  A=0 B=1 || F2=0
+time=  15.0 ns  A=1 B=0 || F2=0
+time=  20.0 ns  A=1 B=1 || F2=1
+time=  25.0 ns  A=0 B=0 || F2=1
+time=  30.0 ns  A=0 B=1 || F2=0
+time=  35.0 ns  A=1 B=0 || F2=0
+time=  40.0 ns  A=1 B=1 || F2=1
+$finish called at time : 40 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab2/lab2.srcs/sim_1/new/circuit2_tb.v" Line 50
