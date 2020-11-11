@@ -1,0 +1,18 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+1 time-55.0ns a=f0f03c3c b=bf0ff5f5 Carryout=x OverFlow=x ALUCntl=0000 || ALUout=b0003434
+2 time-65.0ns a=f0f03c3c b=bf0ff5f5 Carryout=x OverFlow=x ALUCntl=0001 || ALUout=fffffdfd
+3 time-75.0ns a=f0f03c3c b=bf0ff5f5 Carryout=x OverFlow=x ALUCntl=0011 || ALUout=4fffc9c9
+4 time-85.0ns a=00000001 b=ffffffff Carryout=1 OverFlow=1 ALUCntl=0010 || ALUout=00000000
+5 time-95.0ns a=6389754f b=ad5624e6 Carryout=1 OverFlow=1 ALUCntl=0010 || ALUout=10df9a35
+6 time-105.0ns a=00000001 b=ffffffff Carryout=1 OverFlow=1 ALUCntl=0010 || ALUout=00000000
+7 time-115.0ns a=6389754f b=ad5624e6 Carryout=1 OverFlow=1 ALUCntl=0010 || ALUout=10df9a35
+8 time-125.0ns a=ffffffff b=ffffffff Carryout=1 OverFlow=1 ALUCntl=0010 || ALUout=fffffffe
+9 time-135.0ns a=00000000 b=00000001 Carryout=1 OverFlow=1 ALUCntl=0110 || ALUout=ffffffff
+10 time-145.0ns a=f9684783 b=f998d562 Carryout=1 OverFlow=1 ALUCntl=0110 || ALUout=ffcf7221
+11 time-155.0ns a=f0f03c3c b=bf0ff5f5 Carryout=x OverFlow=x ALUCntl=1100 || ALUout=f0f03e3e
+12 time-165.0ns a=89bcde34 b=c53bd687 Carryout=x OverFlow=x ALUCntl=0111 || ALUout=764321cb
+13 time-175.0ns a=f0f03c3c b=bf0ff5f5 Carryout=x OverFlow=x ALUCntl=1101 || ALUout=00000000
+14 time-185.0ns a=f0f03c3c b=bf0ff5f5 Carryout=x OverFlow=x ALUCntl=1111 || ALUout=00000000
+15 time-195.0ns a=f0f03c3c b=bf0ff5f5 Carryout=1 OverFlow=0 ALUCntl=1010 || ALUout=b0003231
+16 time-205.0ns a=f0f03c3c b=bf0ff5f5 Carryout=0 OverFlow=1 ALUCntl=1110 || ALUout=31e04647
