@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sim_1/new/Datapath_tb.v,1603135650,verilog,,,,Datapath_tb,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/ALU.v,1603144333,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/Control.v,,ALU,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/Control.v,1603218276,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/Datapath.v,,Control,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/Datapath.v,1603217018,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/Instruction_Memory.v,,Datapath,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/Instruction_Memory.v,1602830575,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/PC.v,,Instruction_Memory,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/PC.v,1602830520,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/PCADD.v,,PC,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/PCADD.v,1603214369,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/regfile32.v,,PCADD,,,,,,,,
+C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sources_1/new/regfile32.v,1603216997,verilog,,C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sim_1/new/Datapath_tb.v,,regfile32,,,,,,,,

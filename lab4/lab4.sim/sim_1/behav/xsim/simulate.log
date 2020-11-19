@@ -1,0 +1,35 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+t= 230.0 ns rf[0]:     00000000
+t= 250.0 ns rf[1]:     00000000
+t= 270.0 ns rf[2]:     00000000
+t= 290.0 ns rf[3]:     00000000
+t= 310.0 ns rf[4]:     00000000
+t= 330.0 ns rf[5]:     00000000
+t= 350.0 ns rf[6]:     00000000
+t= 370.0 ns rf[7]:     00000000
+t= 390.0 ns rf[8]:     00000015
+t= 410.0 ns rf[9]:     00000017
+t= 430.0 ns rf[a]:     0000000c
+t= 450.0 ns rf[b]:     fffffffd
+t= 470.0 ns rf[c]:     0000000f
+t= 490.0 ns rf[d]:     0000001f
+t= 510.0 ns rf[e]:     0000000f
+t= 530.0 ns rf[f]:     00000010
+t= 550.0 ns rf[10]:     ffffffff
+t= 570.0 ns rf[11]:     ffffffff
+t= 590.0 ns rf[12]:     00000001
+t= 610.0 ns rf[13]:     00000001
+t= 630.0 ns rf[14]:     00000015
+t= 650.0 ns rf[15]:     00000016
+t= 670.0 ns rf[16]:     00000017
+t= 690.0 ns rf[17]:     00000018
+t= 710.0 ns rf[18]:     00000019
+t= 730.0 ns rf[19]:     0000001a
+t= 750.0 ns rf[1a]:     00000000
+t= 770.0 ns rf[1b]:     00000000
+t= 790.0 ns rf[1c]:     00000000
+t= 810.0 ns rf[1d]:     00000000
+t= 830.0 ns rf[1e]:     00000000
+t= 850.0 ns rf[1f]:     00000000
+$finish called at time : 850 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab4/lab4.srcs/sim_1/new/Datapath_tb.v" Line 54

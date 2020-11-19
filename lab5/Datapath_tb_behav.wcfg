@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Datapath_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Datapath_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="849998153fs"></ZoomEndTime>
+      <Cursor1Time time="41937000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/Datapath_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/D_out" type="array">
+      <obj_property name="ElementShortName">D_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/D_out" type="array">
+      <obj_property name="ElementShortName">D_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/PC_out" type="array">
+      <obj_property name="ElementShortName">PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/PCADD4_out" type="array">
+      <obj_property name="ElementShortName">PCADD4_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCADD4_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/PCADDSHFT_out" type="array">
+      <obj_property name="ElementShortName">PCADDSHFT_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCADDSHFT_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/signExt" type="array">
+      <obj_property name="ElementShortName">signExt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">signExt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/RegDst_Mux" type="array">
+      <obj_property name="ElementShortName">RegDst_Mux[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDst_Mux[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/aluCntl" type="array">
+      <obj_property name="ElementShortName">aluCntl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">aluCntl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/regWrite" type="logic">
+      <obj_property name="ElementShortName">regWrite</obj_property>
+      <obj_property name="ObjectShortName">regWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/RegDst" type="logic">
+      <obj_property name="ElementShortName">RegDst</obj_property>
+      <obj_property name="ObjectShortName">RegDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/Branch" type="array">
+      <obj_property name="ElementShortName">Branch[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Branch[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/MemtoReg" type="logic">
+      <obj_property name="ElementShortName">MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/rs" type="array">
+      <obj_property name="ElementShortName">rs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/rt" type="array">
+      <obj_property name="ElementShortName">rt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/Z" type="logic">
+      <obj_property name="ElementShortName">Z</obj_property>
+      <obj_property name="ObjectShortName">Z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/ALUout" type="array">
+      <obj_property name="ElementShortName">ALUout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/BranchSel" type="logic">
+      <obj_property name="ElementShortName">BranchSel</obj_property>
+      <obj_property name="ObjectShortName">BranchSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_tb/uut/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+   </wvobject>
+</wave_config>

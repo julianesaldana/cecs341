@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 17 14:22:46 2020
+# Process ID: 14868
+# Current directory: C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10844 C:\Users\Julian\Desktop\VivadoProjects\cecs341\lab5\lab5.xpr
+# Log file: C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/vivado.log
+# Journal file: C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/DataMem.dat] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/DataMem.dat
+export_ip_user_files -of_objects  [get_files C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/imem.dat] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/imem.dat
+launch_simulation
+source Datapath_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/DataMem.dat C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/imem.dat}
+close_sim
+launch_simulation
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
+launch_simulation
+source Datapath_tb.tcl
+close_sim
