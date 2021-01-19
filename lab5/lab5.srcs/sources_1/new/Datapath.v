@@ -41,12 +41,12 @@ module Datapath(
     assign ALU_mux = (ALUSrc) ? signExt : rt;
     assign D_mux = (MemtoReg) ? rd_data : ALUout;
     
-    always@(posedge clk, posedge reset) begin
-        if(reset == 1)
-            D_out <= 32'b0;
-        else 
-            D_out <= D_mux;
-    end
+//    always@(posedge clk, posedge reset) begin
+//        if(reset == 1)
+//            D_out <= 32'b0;
+//        else 
+//            D_out <= D_mux;
+//    end
     
     PC 
         PC(.clk(clk), .reset(reset), .PC_in(ADD_mux), .PC_out(PC_out));

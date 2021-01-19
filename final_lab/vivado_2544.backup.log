@@ -1,0 +1,2456 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec  7 18:30:58 2020
+# Process ID: 2544
+# Current directory: C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2776 C:\Users\Julian\Desktop\VivadoProjects\cecs341\final_lab\final_lab.xpr
+# Log file: C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/vivado.log
+# Journal file: C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+t=1050.0 ns  datamem[20]:    00000005
+Final Values:
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+t=1150.0 ns  datamem[40]:    xxxxxxxx
+t=1170.0 ns  datamem[44]:    xxxxxxxx
+$finish called at time : 1170 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[0]:    00000000
+t=1070.0 ns  datamem[4]:    00000002
+t=1090.0 ns  datamem[8]:    00000003
+t=1110.0 ns  datamem[12]:    00000004
+t=1130.0 ns  datamem[16]:    00000005
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000001
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    xxxxxxxx
+t=1070.0 ns  datamem[24]:    xxxxxxxx
+t=1090.0 ns  datamem[28]:    xxxxxxxx
+t=1110.0 ns  datamem[32]:    xxxxxxxx
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    xxxxxxxx
+t=1070.0 ns  datamem[24]:    xxxxxxxx
+t=1090.0 ns  datamem[28]:    xxxxxxxx
+t=1110.0 ns  datamem[32]:    xxxxxxxx
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    xxxxxxxx
+t=1070.0 ns  datamem[24]:    xxxxxxxx
+t=1090.0 ns  datamem[28]:    xxxxxxxx
+t=1110.0 ns  datamem[32]:    xxxxxxxx
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    xxxxxxxx
+t=1070.0 ns  datamem[24]:    xxxxxxxx
+t=1090.0 ns  datamem[28]:    xxxxxxxx
+t=1110.0 ns  datamem[32]:    xxxxxxxx
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    xxxxxxxx
+t=1070.0 ns  datamem[24]:    xxxxxxxx
+t=1090.0 ns  datamem[28]:    xxxxxxxx
+t=1110.0 ns  datamem[32]:    xxxxxxxx
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    xxxxxxxx
+t=1070.0 ns  datamem[24]:    xxxxxxxx
+t=1090.0 ns  datamem[28]:    xxxxxxxx
+t=1110.0 ns  datamem[32]:    xxxxxxxx
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[0]:    00000000
+t=1070.0 ns  datamem[4]:    00000002
+t=1090.0 ns  datamem[8]:    00000003
+t=1110.0 ns  datamem[12]:    00000004
+t=1130.0 ns  datamem[16]:    00000005
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+"xelab -wto d1ddf9ad1ad347caa203b93972270bd7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d1ddf9ad1ad347caa203b93972270bd7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -view {C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/Datapath_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/Datapath_tb_behav.wcfg
+WARNING: Simulation object /Datapath_tb/uut/RegDst_Mux was not found in the design.
+WARNING: Simulation object /Datapath_tb/uut/aluCntl was not found in the design.
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Initial Values:
+t= 630.0 ns  address[0]:    00000000
+t= 650.0 ns  address[4]:    0000ffff
+t= 670.0 ns  address[8]:    12345678
+t= 690.0 ns  address[12]:    00000008
+t= 710.0 ns  address[16]:    00000001
+t= 730.0 ns  address[20]:    00000003
+Final Values:
+t= 750.0 ns  address[24]:    xxxxxxxx
+t= 770.0 ns  address[28]:    xxxxxxxx
+t= 790.0 ns  address[32]:    xxxxxxxx
+t= 810.0 ns  address[36]:    xxxxxxxx
+t= 830.0 ns  address[40]:    xxxxxxxx
+t= 850.0 ns  address[44]:    xxxxxxxx
+$finish called at time : 850 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/datapath_tb.v" Line 37
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.063 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+"xelab -wto d1ddf9ad1ad347caa203b93972270bd7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d1ddf9ad1ad347caa203b93972270bd7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -view {C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/Datapath_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/Datapath_tb_behav.wcfg
+WARNING: Simulation object /Datapath_tb/uut/RegDst_Mux was not found in the design.
+WARNING: Simulation object /Datapath_tb/uut/aluCntl was not found in the design.
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Initial Values:
+t= 630.0 ns  address[0]:    00000000
+t= 650.0 ns  address[4]:    0000ffff
+t= 670.0 ns  address[8]:    12345678
+t= 690.0 ns  address[12]:    00000008
+t= 710.0 ns  address[16]:    00000001
+t= 730.0 ns  address[20]:    00000003
+Final Values:
+t= 750.0 ns  address[24]:    00000002
+t= 770.0 ns  address[28]:    00000000
+t= 790.0 ns  address[32]:    1234567f
+t= 810.0 ns  address[36]:    00000001
+t= 830.0 ns  address[40]:    00000000
+t= 850.0 ns  address[44]:    00000000
+$finish called at time : 850 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/datapath_tb.v" Line 37
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.063 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+t=1050.0 ns  datamem[20]:    00000005
+Final Values:
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+t=1150.0 ns  datamem[40]:    xxxxxxxx
+t=1170.0 ns  datamem[44]:    xxxxxxxx
+$finish called at time : 1170 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 19:15:48 2020...

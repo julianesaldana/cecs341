@@ -1,0 +1,15 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38

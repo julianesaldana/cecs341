@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec  8 09:34:17 2020
+# Process ID: 14940
+# Current directory: C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3548 C:\Users\Julian\Desktop\VivadoProjects\cecs341\final_lab\final_lab.xpr
+# Log file: C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/vivado.log
+# Journal file: C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 760.621 ; gain = 20.672
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec  8 09:43:22 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec  8 09:43:22 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 778.070 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Datapath_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/DataMem.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim/imem.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Datapath_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+"xelab -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8ab038fec8ae4452af69d3e2d98394a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCADD
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.regfile32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Datapath_tb_behav -key {Behavioral:sim_1:Functional:Datapath_tb} -tclbatch {Datapath_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Initial Values:
+t= 950.0 ns  datamem[0]:    00000000
+t= 970.0 ns  datamem[4]:    00000002
+t= 990.0 ns  datamem[8]:    00000003
+t=1010.0 ns  datamem[12]:    00000004
+t=1030.0 ns  datamem[16]:    00000005
+Final Values:
+t=1050.0 ns  datamem[20]:    00000005
+t=1070.0 ns  datamem[24]:    0000000e
+t=1090.0 ns  datamem[28]:    00000005
+t=1110.0 ns  datamem[32]:    00000014
+t=1130.0 ns  datamem[36]:    xxxxxxxx
+$finish called at time : 1130 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sim_1/new/Datapath_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: Datapath
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1196.293 ; gain = 173.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCADD' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCADD' (2#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/PCADD.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:3]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+WARNING: [Synth 8-3848] Net imem in module/entity Instruction_Memory does not have driver. [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:8]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (3#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Instruction_Memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (4#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile32' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:3]
+WARNING: [Synth 8-5788] Register regArray_reg[1] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[2] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[3] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[4] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[5] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[6] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[7] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[8] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[9] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[10] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[11] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[12] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[13] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[14] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[15] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[16] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[17] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[18] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[19] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[20] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[21] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[22] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[23] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[24] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[25] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[26] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[27] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[28] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[29] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[30] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+WARNING: [Synth 8-5788] Register regArray_reg[31] in module regfile32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'regfile32' (5#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/regfile32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/ALU.v:3]
+WARNING: [Synth 8-7023] instance 'ALU' of module 'ALU' has 8 connections declared, but only 5 given [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v:76]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v:3]
+WARNING: [Synth 8-4767] Trying to implement RAM 'dmem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dmem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (7#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/DataMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (8#1) [C:/Users/Julian/Desktop/VivadoProjects/cecs341/final_lab/final_lab.srcs/sources_1/new/Datapath.v:3]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[31]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[30]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[29]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[28]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[27]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[26]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[25]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[24]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[23]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[22]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[21]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[20]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[19]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[18]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[17]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[16]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[15]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[14]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[13]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[12]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[1]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port Addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 2238.742 ; gain = 1216.227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 2252.656 ; gain = 1230.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 2252.656 ; gain = 1230.141
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2399.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:09 ; elapsed = 00:00:58 . Memory (MB): peak = 2399.113 ; gain = 1376.598
+21 Infos, 175 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:03 . Memory (MB): peak = 2399.113 ; gain = 1575.406
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  8 10:08:06 2020...

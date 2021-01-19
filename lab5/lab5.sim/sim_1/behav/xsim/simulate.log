@@ -1,0 +1,17 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Initial Values:
+t= 630.0 ns  address[0]:    00000000
+t= 650.0 ns  address[4]:    0000ffff
+t= 670.0 ns  address[8]:    12345678
+t= 690.0 ns  address[12]:    00000008
+t= 710.0 ns  address[16]:    00000001
+t= 730.0 ns  address[20]:    00000003
+Final Values:
+t= 750.0 ns  address[24]:    00000002
+t= 770.0 ns  address[28]:    00000000
+t= 790.0 ns  address[32]:    1234567f
+t= 810.0 ns  address[36]:    00000001
+t= 830.0 ns  address[40]:    00000000
+t= 850.0 ns  address[44]:    00000000
+$finish called at time : 850 ns : File "C:/Users/Julian/Desktop/VivadoProjects/cecs341/lab5/lab5.srcs/sim_1/new/datapath_tb.v" Line 37
